@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="hero-bottom page-gutter">
-    <div class="hero-role">LARAVEL &amp; PHP DEVELOPER<br><span>WEB DEVELOPER / UI/UX DESIGNER</span></div>
+    <div class="hero-role">LARAVEL &amp; PHP DEVELOPER<br><span class="hero-role-badge">WEB DEVELOPER / UI/UX DESIGNER</span></div>
     <p>Creating meaningful digital experiences through <em>design, development</em> and attention to detail.</p>
     <a class="scroll-cue" href="#work">SCROLL TO EXPLORE</a>
   </div>
