@@ -478,6 +478,16 @@ a:focus-visible, button:focus-visible {
   color: #6e6e6e;
 }
 
+.intro-heading span.highlight-text-accent,
+.highlight-text-accent {
+  color: var(--accent) !important;
+}
+
+.text-accent {
+  color: var(--accent) !important;
+  font-style: normal;
+}
+
 /* Underlined Link - No Arrow */
 .underlined-link {
   display: inline-flex;
@@ -550,19 +560,9 @@ a:focus-visible, button:focus-visible {
   box-shadow: 0 4px 16px rgba(245, 217, 0, 0.28);
 }
 
-.display-heading .highlight-bar-white,
-.highlight-bar-white {
-  display: inline-block;
-  background: #ffffff;
-  color: #000000 !important;
-  font-style: normal;
-  font-weight: 700;
-  padding: 0.04em 0.14em 0.06em;
-  margin-left: 0.08em;
-  line-height: 0.92;
-  border-radius: 0;
-  vertical-align: baseline;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.18);
+#expertise-title,
+#expertise-title * {
+  color: #ffffff !important;
 }
 
 .section-heading-row > p {
@@ -1165,6 +1165,8 @@ a:focus-visible, button:focus-visible {
     display: none;
   }
   .about-description {
+    font-size: 16px !important;
+    line-height: 1.65;
     margin: 35px 0 15px;
   }
   .about-portrait {

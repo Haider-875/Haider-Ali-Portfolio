@@ -8,7 +8,7 @@
   <div class="section-eyebrow reveal">PROJECT ARCHIVE</div>
   <div class="section-heading-row reveal">
     <div>
-      <h1 class="display-heading">SELECTED <i>WORK</i><span class="white-dot">.</span></h1>
+      <h1 class="display-heading">SELECTED <span class="text-accent">WORK</span><span class="white-dot">.</span></h1>
     </div>
     <p>A selection of websites I've worked on.<br>Explore the live experiences.</p>
   </div>

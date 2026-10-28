@@ -45,7 +45,7 @@
     </div>
     <div class="col-lg-8">
       <h2 id="intro-title" class="intro-heading reveal">
-        I BUILD <span>WEB</span> EXPERIENCES THAT <span>FEEL AS GOOD</span> AS THEY WORK<span class="white-dot">.</span>
+        I BUILD <span>WEB</span> EXPERIENCES THAT <span class="highlight-text-accent">FEEL AS GOOD</span> AS THEY WORK<span class="white-dot">.</span>
       </h2>
       <a href="#about" class="underlined-link reveal">MORE ABOUT ME</a>
     </div>
@@ -58,7 +58,7 @@
   <div class="section-heading-row reveal">
     <div>
       <p class="section-eyebrow">FEATURED WORK</p>
-      <h2 id="work-title" class="display-heading">SELECTED <i>WORK</i><span class="white-dot">.</span></h2>
+      <h2 id="work-title" class="display-heading">SELECTED <span class="text-accent">WORK</span><span class="white-dot">.</span></h2>
     </div>
     <p>A selection of websites I've worked on.<br>Explore the live experiences.</p>
   </div>
@@ -184,7 +184,7 @@
   <div class="section-rule"></div>
   <p class="section-eyebrow reveal">WHAT I DO</p>
   <div class="section-heading-row reveal">
-    <h2 id="expertise-title" class="display-heading">MY <span class="highlight-bar-white">EXPERTISE</span><span class="white-dot">.</span></h2>
+    <h2 id="expertise-title" class="display-heading text-white">MY EXPERTISE<span class="text-white">.</span></h2>
     <p>Selected tools I use to bring<br>ideas into the real world.</p>
   </div>
 
