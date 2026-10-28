@@ -31,17 +31,30 @@ class ContactController extends Controller
     {
         $validated = $request->validated();
 
-        // 1. Persist to MySQL database
-        $message = ContactMessage::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'subject' => $validated['subject'] ?? null,
-            'project_type' => $validated['project_type'] ?? null,
-            'message' => $validated['message'],
-            'ip_address' => $request->ip(),
-            'user_agent' => $request->userAgent(),
-            'is_read' => false,
-        ]);
+        // 1. Persist to database with graceful fallback
+        $message = null;
+        try {
+            $message = ContactMessage::create([
+                'name' => $validated['name'],
+                'email' => $validated['email'],
+                'subject' => $validated['subject'] ?? null,
+                'project_type' => $validated['project_type'] ?? null,
+                'message' => $validated['message'],
+                'ip_address' => $request->ip(),
+                'user_agent' => $request->userAgent(),
+                'is_read' => false,
+            ]);
+        } catch (\Throwable $e) {
+            // Log database error without crashing the server if connection is refused on cloud
+            Log::warning('Contact submission database save deferred: '.$e->getMessage());
+            $message = new ContactMessage([
+                'name' => $validated['name'],
+                'email' => $validated['email'],
+                'subject' => $validated['subject'] ?? null,
+                'project_type' => $validated['project_type'] ?? null,
+                'message' => $validated['message'],
+            ]);
+        }
 
         // 2. Dispatch email notification to Hadihnd0@gmail.com
         $recipientEmail = env('CONTACT_RECEIVER_EMAIL', config('portfolio.owner.email', 'Hadihnd0@gmail.com'));
