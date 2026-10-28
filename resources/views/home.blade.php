@@ -184,7 +184,7 @@
   <div class="section-rule"></div>
   <p class="section-eyebrow reveal">WHAT I DO</p>
   <div class="section-heading-row reveal">
-    <h2 id="expertise-title" class="display-heading">MY <i>EXPERTISE</i><span class="white-dot">.</span></h2>
+    <h2 id="expertise-title" class="display-heading">MY <span class="highlight-bar-white">EXPERTISE</span><span class="white-dot">.</span></h2>
     <p>Selected tools I use to bring<br>ideas into the real world.</p>
   </div>
 

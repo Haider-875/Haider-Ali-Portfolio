@@ -550,6 +550,21 @@ a:focus-visible, button:focus-visible {
   box-shadow: 0 4px 16px rgba(245, 217, 0, 0.28);
 }
 
+.display-heading .highlight-bar-white,
+.highlight-bar-white {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000 !important;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0.04em 0.14em 0.06em;
+  margin-left: 0.08em;
+  line-height: 0.92;
+  border-radius: 0;
+  vertical-align: baseline;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.18);
+}
+
 .section-heading-row > p {
   font: 400 14px/1.65 var(--font);
   color: #aaa;
