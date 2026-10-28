@@ -11,7 +11,7 @@
   </div>
 
   <h1 class="contact-heading mt-0 mb-5">
-    LET'S MAKE<br><span>IT HAPPEN</span><span class="white-dot">.</span>
+    LET'S MAKE<br><span class="highlight-bar">IT HAPPEN</span><span class="white-dot">.</span>
   </h1>
 
   <div class="contact-bottom mb-5">

@@ -222,7 +222,7 @@
   </div>
 
   <h2 id="contact-title" class="contact-heading reveal">
-    LET'S MAKE<br><span>IT HAPPEN</span><span class="white-dot">.</span>
+    LET'S MAKE<br><span class="highlight-bar">IT HAPPEN</span><span class="white-dot">.</span>
   </h2>
 
   <div class="contact-bottom">
