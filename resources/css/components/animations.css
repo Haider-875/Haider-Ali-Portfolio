@@ -1,0 +1,158 @@
+/* ==========================================================================
+   ANIMATIONS & MOTION SYSTEM (DARK CHARCOAL & LIME EDITORIAL)
+   ========================================================================== */
+
+/* Upward text mask wrapper */
+.text-mask-wrap {
+    overflow: hidden;
+    display: block;
+}
+
+.text-mask-inner {
+    display: inline-block;
+    transform: translateY(110%);
+    opacity: 0;
+    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+}
+
+.text-mask-inner.is-in {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+/* Character split for hero */
+.char-wrap {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.char-inner {
+    display: inline-block;
+    transform: translateY(115%);
+    opacity: 0;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+}
+
+.char-inner.revealed {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+/* Portrait vertical mask reveal */
+.portrait-reveal-mask {
+    position: relative;
+    overflow: hidden;
+}
+
+.portrait-reveal-mask::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg-main, #0A0E0B);
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 1.1s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.portrait-reveal-mask.revealed::after {
+    transform: scaleY(0);
+}
+
+/* Scroll reveal helper classes */
+[data-reveal="fade-up"] {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s ease;
+    will-change: transform, opacity;
+}
+
+[data-reveal="fade-up"].is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-reveal="fade-right"] {
+    opacity: 0;
+    transform: translateX(-35px);
+    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s ease;
+}
+
+[data-reveal="fade-right"].is-revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-reveal="fade-left"] {
+    opacity: 0;
+    transform: translateX(35px);
+    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s ease;
+}
+
+[data-reveal="fade-left"].is-revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Project image reveal masks */
+.image-reveal-mask {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-reveal-mask::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg-surface, #121F17);
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.image-reveal-mask.revealed::after {
+    transform: scaleY(0);
+}
+
+/* Desktop Magnetic Button */
+.magnetic-btn {
+    display: inline-flex;
+    position: relative;
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .char-inner,
+    .text-mask-inner {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .portrait-reveal-mask::after,
+    .image-reveal-mask::after {
+        display: none !important;
+    }
+
+    .custom-cursor {
+        display: none !important;
+    }
+}
