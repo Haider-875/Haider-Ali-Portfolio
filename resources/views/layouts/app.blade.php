@@ -15,7 +15,11 @@
   <meta property="og:url" content="{{ url()->current() }}">
   <meta property="og:image" content="{{ asset('images/portrait/haider-portrait.jpg') }}">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.png') }}">
+  <link rel="apple-touch-icon" sizes="64x64" href="{{ asset('favicon-64.png') }}">
+  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

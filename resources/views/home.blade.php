@@ -14,8 +14,8 @@
     </picture>
   </div>
   <div class="hero-topline page-gutter">
-    <span><span class="indicator"></span> INDEPENDENT WEB DEVELOPER</span>
-    <span>PORTFOLIO / 2026</span>
+    <span class="hero-tag">INDEPENDENT WEB DEVELOPER</span>
+    <span class="hero-meta">PORTFOLIO / 2026</span>
   </div>
   <div class="hero-type page-gutter" aria-label="HAIDER ALI">
     <div class="hero-name first" data-text="HAIDER">
