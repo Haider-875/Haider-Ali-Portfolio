@@ -158,7 +158,7 @@
   <p class="section-eyebrow reveal">ABOUT ME</p>
   <div class="row g-5 about-grid">
     <div class="col-lg-7">
-      <h2 id="about-title" class="display-heading reveal">BEYOND<br>THE <i>CODE</i><span class="white-dot">.</span></h2>
+      <h2 id="about-title" class="display-heading reveal">BEYOND<br>THE <span class="highlight-bar">CODE</span><span class="white-dot">.</span></h2>
       <p class="about-description reveal">
         I'm <strong>Haider Ali</strong>, a web developer and UI/UX designer with over <strong>5 years of experience</strong>. I specialize in Laravel and PHP, combining strong development foundations with sharp, thoughtful interfaces.
       </p>

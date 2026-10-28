@@ -8,7 +8,7 @@
   <div class="section-eyebrow reveal">ABOUT THE DEVELOPER</div>
   <div class="row g-5 align-items-center">
     <div class="col-lg-7">
-      <h1 class="display-heading reveal">BEYOND THE <i>CODE</i><span class="white-dot">.</span></h1>
+      <h1 class="display-heading reveal">BEYOND THE <span class="highlight-bar">CODE</span><span class="white-dot">.</span></h1>
       <p class="about-description reveal">
         I'm <strong>Haider Ali</strong>, a web developer and UI/UX designer with over <strong>5 years of experience</strong>. I specialize in Laravel and PHP development, combining strong development foundations with sharp, thoughtful interfaces.
       </p>
