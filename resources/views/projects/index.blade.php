@@ -5,7 +5,7 @@
 
 @section('content')
 <section class="work-section section-wrap" style="padding-top: 140px;">
-  <div class="section-eyebrow reveal">01 — PROJECT ARCHIVE</div>
+  <div class="section-eyebrow reveal">PROJECT ARCHIVE</div>
   <div class="section-heading-row reveal">
     <div>
       <h1 class="display-heading">SELECTED <i>WORK</i><span class="white-dot">.</span></h1>

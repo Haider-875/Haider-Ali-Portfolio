@@ -34,12 +34,11 @@
     <p>Creating meaningful digital experiences through <em>design, development</em> and attention to detail.</p>
     <a class="scroll-cue" href="#work">SCROLL TO EXPLORE</a>
   </div>
-  <div class="hero-index">01 / 05</div>
 </section>
 
 <!-- 01 The Introduction -->
 <section class="intro-section section-wrap" aria-labelledby="intro-title">
-  <div class="section-eyebrow reveal">01 — THE INTRODUCTION</div>
+  <div class="section-eyebrow reveal">THE INTRODUCTION</div>
   <div class="row intro-layout g-4">
     <div class="col-lg-4">
       <p class="muted reveal intro-aside">A thoughtful approach to<br>technology &amp; design.</p>
@@ -58,7 +57,7 @@
   <div class="section-rule"></div>
   <div class="section-heading-row reveal">
     <div>
-      <p class="section-eyebrow">02 — FEATURED WORK</p>
+      <p class="section-eyebrow">FEATURED WORK</p>
       <h2 id="work-title" class="display-heading">SELECTED <i>WORK</i><span class="white-dot">.</span></h2>
     </div>
     <p>A selection of websites I've worked on.<br>Explore the live experiences.</p>
@@ -153,10 +152,10 @@
   <p class="project-footnote">PROJECT PREVIEWS ARE ORIGINAL GRAPHIC PLACEHOLDERS, NOT LIVE WEBSITE SCREENSHOTS. ALL PROJECT LINKS OPEN THE LIVE SITES.</p>
 </section>
 
-<!-- 03 About Me -->
+<!-- About Me -->
 <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
   <div class="section-rule"></div>
-  <p class="section-eyebrow reveal">03 — ABOUT ME</p>
+  <p class="section-eyebrow reveal">ABOUT ME</p>
   <div class="row g-5 about-grid">
     <div class="col-lg-7">
       <h2 id="about-title" class="display-heading reveal">BEYOND<br>THE <i>CODE</i><span class="white-dot">.</span></h2>
@@ -180,10 +179,10 @@
   </div>
 </section>
 
-<!-- 04 Expertise -->
+<!-- Expertise -->
 <section class="expertise-section section-wrap" id="expertise" aria-labelledby="expertise-title">
   <div class="section-rule"></div>
-  <p class="section-eyebrow reveal">04 — WHAT I DO</p>
+  <p class="section-eyebrow reveal">WHAT I DO</p>
   <div class="section-heading-row reveal">
     <h2 id="expertise-title" class="display-heading">MY <i>EXPERTISE</i><span class="white-dot">.</span></h2>
     <p>Selected tools I use to bring<br>ideas into the real world.</p>
@@ -191,7 +190,6 @@
 
   <div class="skills-grid">
     <div class="skill-group reveal">
-      <span class="skill-num">01</span>
       <h3>DEVELOPMENT</h3>
       <p>Laravel</p>
       <p>PHP</p>
@@ -199,7 +197,6 @@
       <p>Blade Templates</p>
     </div>
     <div class="skill-group reveal">
-      <span class="skill-num">02</span>
       <h3>FRONTEND</h3>
       <p>HTML / CSS</p>
       <p>JavaScript</p>
@@ -207,7 +204,6 @@
       <p>Responsive Design</p>
     </div>
     <div class="skill-group reveal">
-      <span class="skill-num">03</span>
       <h3>DESIGN &amp; TOOLS</h3>
       <p>UI / UX Design</p>
       <p>Figma</p>
@@ -217,11 +213,11 @@
   </div>
 </section>
 
-<!-- 05 Contact -->
+<!-- Contact -->
 <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
   <div class="section-rule"></div>
   <div class="contact-meta">
-    <span>05 — HAVE A PROJECT IN MIND?</span>
+    <span>HAVE A PROJECT IN MIND?</span>
     <span>LET'S CONNECT</span>
   </div>
 

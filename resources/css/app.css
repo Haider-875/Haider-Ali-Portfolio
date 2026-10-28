@@ -717,7 +717,7 @@ a:focus-visible, button:focus-visible {
 .skill-group h3 {
   font: 600 25px var(--font);
   letter-spacing: -0.055em;
-  margin: 24px 0 39px;
+  margin: 12px 0 30px;
   color: #fff;
 }
 

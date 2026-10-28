@@ -6,7 +6,7 @@
 
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="{{ request()->routeIs('home') ? '#work' : route('projects.index') }}" class="{{ request()->routeIs('projects.*') ? 'active' : '' }}">
-        Work <span class="nav-number">(06)</span>
+        Work
       </a>
       <a href="{{ request()->routeIs('home') ? '#about' : route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">
         About
@@ -34,10 +34,10 @@
 
 <!-- Mobile Navigation -->
 <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" inert>
-  <a href="{{ route('home') }}">Home <span>01</span></a>
-  <a href="{{ request()->routeIs('home') ? '#work' : route('projects.index') }}">Work <span>02</span></a>
-  <a href="{{ request()->routeIs('home') ? '#about' : route('about') }}">About <span>03</span></a>
-  <a href="{{ request()->routeIs('home') ? '#expertise' : route('home') . '#expertise' }}">Expertise <span>04</span></a>
-  <a href="{{ request()->routeIs('home') ? '#contact' : route('contact') }}">Contact <span>05</span></a>
+  <a href="{{ route('home') }}">Home</a>
+  <a href="{{ request()->routeIs('home') ? '#work' : route('projects.index') }}">Work</a>
+  <a href="{{ request()->routeIs('home') ? '#about' : route('about') }}">About</a>
+  <a href="{{ request()->routeIs('home') ? '#expertise' : route('home') . '#expertise' }}">Expertise</a>
+  <a href="{{ request()->routeIs('home') ? '#contact' : route('contact') }}">Contact</a>
   <p>WEB DEVELOPER — AVAILABLE FOR SELECT PROJECTS</p>
 </nav>

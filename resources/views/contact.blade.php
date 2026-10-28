@@ -6,7 +6,7 @@
 @section('content')
 <section class="section-wrap" style="padding-top: 140px; padding-bottom: 120px;">
   <div class="contact-meta mb-4">
-    <span>01 — INITIATE DIALOGUE</span>
+    <span>INITIATE DIALOGUE</span>
     <span>AVAILABLE FOR SELECT PROJECTS</span>
   </div>
 

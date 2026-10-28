@@ -5,7 +5,7 @@
 
 @section('content')
 <section class="section-wrap" style="padding-top: 140px; padding-bottom: 120px;">
-  <div class="section-eyebrow reveal">01 — ABOUT THE DEVELOPER</div>
+  <div class="section-eyebrow reveal">ABOUT THE DEVELOPER</div>
   <div class="row g-5 align-items-center">
     <div class="col-lg-7">
       <h1 class="display-heading reveal">BEYOND THE <i>CODE</i><span class="white-dot">.</span></h1>
@@ -35,7 +35,7 @@
 <!-- Expertise Taxonomy -->
 <section class="expertise-section section-wrap" style="padding-bottom: 120px;">
   <div class="section-rule"></div>
-  <p class="section-eyebrow reveal">02 — WHAT I DO</p>
+  <p class="section-eyebrow reveal">WHAT I DO</p>
   <div class="section-heading-row reveal">
     <h2 class="display-heading">TECHNICAL <i>SPECTRUM</i><span class="white-dot">.</span></h2>
     <p>Selected tools I use to bring<br>ideas into the real world.</p>
@@ -43,7 +43,6 @@
 
   <div class="skills-grid">
     <div class="skill-group reveal">
-      <span class="skill-num">01</span>
       <h3>DEVELOPMENT</h3>
       <p>Laravel</p>
       <p>PHP 8.x</p>
@@ -51,7 +50,6 @@
       <p>Blade Templating</p>
     </div>
     <div class="skill-group reveal">
-      <span class="skill-num">02</span>
       <h3>FRONTEND</h3>
       <p>HTML / CSS</p>
       <p>JavaScript</p>
@@ -59,7 +57,6 @@
       <p>Responsive Design</p>
     </div>
     <div class="skill-group reveal">
-      <span class="skill-num">03</span>
       <h3>DESIGN &amp; TOOLS</h3>
       <p>UI / UX Design</p>
       <p>Figma</p>
