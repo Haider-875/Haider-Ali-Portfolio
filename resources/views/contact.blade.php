@@ -61,7 +61,7 @@
     <form action="{{ route('contact.send') }}" method="POST" novalidate class="futuristic-form">
       @csrf
 
-      <div class="row g-4 mb-4">
+      <div class="row g-3 g-md-4 mb-3 mb-md-4">
         <div class="col-md-6">
           <label for="name" class="form-label-tech">
             <span class="label-idx">01</span>
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="row g-4 mb-4">
+      <div class="row g-3 g-md-4 mb-3 mb-md-4">
         <div class="col-md-6">
           <label for="subject" class="form-label-tech">
             <span class="label-idx">03</span>
@@ -120,7 +120,7 @@
         </div>
       </div>
 
-      <div class="mb-4">
+      <div class="mb-3 mb-md-4">
         <label for="message" class="form-label-tech">
           <span class="label-idx">05</span>
           <span class="label-name">Project Scope &amp; Requirements</span>
