@@ -108,14 +108,59 @@
             <span class="label-name">Architecture Domain</span>
           </label>
           <div class="input-glow-wrapper select-wrapper">
-            <select name="project_type" id="project_type" class="form-select-tech">
-              <option value="" {{ old('project_type') == '' ? 'selected' : '' }}>Select Project Type (Optional)</option>
-              <option value="Laravel Web Application" {{ old('project_type') == 'Laravel Web Application' ? 'selected' : '' }}>Laravel Web Application</option>
-              <option value="PHP & Relational Database" {{ old('project_type') == 'PHP & Relational Database' ? 'selected' : '' }}>PHP &amp; Relational Database</option>
-              <option value="E-Commerce Platform" {{ old('project_type') == 'E-Commerce Platform' ? 'selected' : '' }}>E-Commerce Platform</option>
-              <option value="UI/UX & Frontend Design" {{ old('project_type') == 'UI/UX & Frontend Design' ? 'selected' : '' }}>UI/UX &amp; Frontend Design</option>
-              <option value="General Consultation" {{ old('project_type') == 'General Consultation' ? 'selected' : '' }}>General Consultation</option>
-            </select>
+            <div class="custom-select-container" id="project-type-container">
+              <select name="project_type" id="project_type" class="form-select-tech visually-hidden-accessible" tabindex="-1" aria-hidden="true">
+                <option value="" {{ old('project_type') == '' ? 'selected' : '' }}>Select Project Type (Optional)</option>
+                <option value="Laravel Web Application" {{ old('project_type') == 'Laravel Web Application' ? 'selected' : '' }}>Laravel Web Application</option>
+                <option value="PHP & Relational Database" {{ old('project_type') == 'PHP & Relational Database' ? 'selected' : '' }}>PHP &amp; Relational Database</option>
+                <option value="E-Commerce Platform" {{ old('project_type') == 'E-Commerce Platform' ? 'selected' : '' }}>E-Commerce Platform</option>
+                <option value="UI/UX & Frontend Design" {{ old('project_type') == 'UI/UX & Frontend Design' ? 'selected' : '' }}>UI/UX &amp; Frontend Design</option>
+                <option value="General Consultation" {{ old('project_type') == 'General Consultation' ? 'selected' : '' }}>General Consultation</option>
+              </select>
+
+              <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false" id="project-type-trigger">
+                <span class="selected-value-wrap">
+                  <span class="option-color-dot dot-neutral"></span>
+                  <span class="selected-text">Select Project Type (Optional)</span>
+                </span>
+                <span class="dropdown-chevron-icon">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
+              </button>
+
+              <div class="custom-select-menu" role="listbox" tabindex="-1">
+                <div class="custom-option is-selected" data-value="" role="option" aria-selected="true">
+                  <span class="option-color-dot dot-neutral"></span>
+                  <span class="option-label">Select Project Type (Optional)</span>
+                  <span class="option-tag tag-neutral">DEFAULT</span>
+                </div>
+                <div class="custom-option" data-value="Laravel Web Application" role="option">
+                  <span class="option-color-dot dot-laravel"></span>
+                  <span class="option-label">Laravel Web Application</span>
+                  <span class="option-tag tag-laravel">LARAVEL</span>
+                </div>
+                <div class="custom-option" data-value="PHP & Relational Database" role="option">
+                  <span class="option-color-dot dot-php"></span>
+                  <span class="option-label">PHP &amp; Relational Database</span>
+                  <span class="option-tag tag-php">BACKEND</span>
+                </div>
+                <div class="custom-option" data-value="E-Commerce Platform" role="option">
+                  <span class="option-color-dot dot-ecommerce"></span>
+                  <span class="option-label">E-Commerce Platform</span>
+                  <span class="option-tag tag-ecommerce">COMMERCE</span>
+                </div>
+                <div class="custom-option" data-value="UI/UX & Frontend Design" role="option">
+                  <span class="option-color-dot dot-design"></span>
+                  <span class="option-label">UI/UX &amp; Frontend Design</span>
+                  <span class="option-tag tag-design">CREATIVE</span>
+                </div>
+                <div class="custom-option" data-value="General Consultation" role="option">
+                  <span class="option-color-dot dot-consult"></span>
+                  <span class="option-label">General Consultation</span>
+                  <span class="option-tag tag-consult">ADVISORY</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -104,4 +104,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sections.forEach(s => observer.observe(s));
     }
+
+    // 7. Futuristic Dropdown Menu with Colors
+    const selectContainers = document.querySelectorAll('.custom-select-container');
+    selectContainers.forEach(container => {
+        const trigger = container.querySelector('.custom-select-trigger');
+        const menu = container.querySelector('.custom-select-menu');
+        const nativeSelect = container.querySelector('select');
+        const options = container.querySelectorAll('.custom-option');
+        const selectedText = trigger?.querySelector('.selected-text');
+        const selectedDot = trigger?.querySelector('.option-color-dot');
+
+        if (!trigger || !menu || !nativeSelect) return;
+
+        const setSelectValue = (value, label, colorClass) => {
+            nativeSelect.value = value;
+            nativeSelect.dispatchEvent(new Event('change', { bubbles: true }));
+            if (selectedText) selectedText.textContent = label;
+            if (selectedDot) {
+                selectedDot.className = 'option-color-dot ' + (colorClass || 'dot-neutral');
+            }
+
+            options.forEach(opt => {
+                const isSelected = opt.getAttribute('data-value') === value;
+                opt.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+                opt.classList.toggle('is-selected', isSelected);
+            });
+        };
+
+        // Initialize from pre-selected or old() value
+        const initialOpt = Array.from(options).find(opt => opt.getAttribute('data-value') === nativeSelect.value) || options[0];
+        if (initialOpt) {
+            const val = initialOpt.getAttribute('data-value');
+            const lbl = initialOpt.querySelector('.option-label')?.textContent || initialOpt.textContent.trim();
+            const dot = initialOpt.querySelector('.option-color-dot')?.className.replace('option-color-dot', '').trim();
+            setSelectValue(val, lbl, dot);
+        }
+
+        const toggleMenu = (open) => {
+            const isOpen = open !== undefined ? open : !container.classList.contains('is-open');
+            container.classList.toggle('is-open', isOpen);
+            trigger.setAttribute('aria-expanded', String(isOpen));
+        };
+
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        options.forEach(opt => {
+            opt.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const value = opt.getAttribute('data-value');
+                const label = opt.querySelector('.option-label')?.textContent || opt.textContent.trim();
+                const dotClass = opt.querySelector('.option-color-dot')?.className.replace('option-color-dot', '').trim();
+                setSelectValue(value, label, dotClass);
+                toggleMenu(false);
+                trigger.focus();
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!container.contains(e.target)) {
+                toggleMenu(false);
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && container.classList.contains('is-open')) {
+                toggleMenu(false);
+                trigger.focus();
+            }
+        });
+    });
 });
