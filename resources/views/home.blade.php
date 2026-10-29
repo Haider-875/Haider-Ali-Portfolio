@@ -469,7 +469,7 @@
         <div class="col-md-6">
           <label for="project_type" class="form-label-tech">
             <span class="label-idx">04</span>
-            <span class="label-name">Architecture Domain</span>
+            <span class="label-name">Architecture Domain (Optional)</span>
           </label>
           <div class="input-glow-wrapper select-wrapper">
             <div class="custom-select-container" id="project-type-container">
@@ -485,7 +485,7 @@
               <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false" id="project-type-trigger">
                 <span class="selected-value-wrap">
                   <span class="option-color-dot dot-neutral"></span>
-                  <span class="selected-text">Select Category (Optional)</span>
+                  <span class="selected-text {{ old('project_type') ? '' : 'is-placeholder' }}">{{ old('project_type') ?: 'Select Category' }}</span>
                 </span>
                 <span class="dropdown-chevron-icon">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -495,7 +495,7 @@
               <div class="custom-select-menu" role="listbox" tabindex="-1">
                 <div class="custom-option is-selected" data-value="" role="option" aria-selected="true">
                   <span class="option-color-dot dot-neutral"></span>
-                  <span class="option-label">Select Category (Optional)</span>
+                  <span class="option-label">Select Category</span>
                   <span class="option-tag tag-neutral">DEFAULT</span>
                 </div>
                 <div class="custom-option" data-value="Laravel Web Application" role="option">

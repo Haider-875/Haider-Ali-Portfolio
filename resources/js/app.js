@@ -120,7 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const setSelectValue = (value, label, colorClass) => {
             nativeSelect.value = value;
             nativeSelect.dispatchEvent(new Event('change', { bubbles: true }));
-            if (selectedText) selectedText.textContent = label;
+            if (selectedText) {
+                selectedText.textContent = label;
+                selectedText.classList.toggle('is-placeholder', !value);
+            }
             if (selectedDot) {
                 selectedDot.className = 'option-color-dot ' + (colorClass || 'dot-neutral');
             }

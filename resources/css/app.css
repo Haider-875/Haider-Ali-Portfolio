@@ -1141,6 +1141,20 @@ a:focus-visible, button:focus-visible {
   white-space: nowrap;
 }
 
+.selected-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  color: #ededed;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.selected-text.is-placeholder {
+  color: #71717a;
+  font-weight: 400;
+}
+
 .dropdown-chevron-icon {
   display: inline-flex;
   align-items: center;
@@ -1743,10 +1757,18 @@ textarea.form-control-dark {
   .form-control-tech,
   .form-select-tech,
   .form-control-dark,
-  .form-select-dark,
-  .custom-select-trigger {
-    font-size: 15px;
+  .form-select-dark {
+    font-size: 13.5px;
     padding: 0.6rem 0.85rem;
+  }
+  .custom-select-trigger {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0.6rem 0.85rem;
+  }
+  .selected-text {
+    font-size: 13px;
+    font-weight: 400;
   }
   .custom-option {
     padding: 6px 10px;
@@ -1807,6 +1829,10 @@ textarea.form-control-dark {
   .form-label-tech,
   .form-label-dark {
     font-size: 9.5px;
+  }
+  .custom-select-trigger,
+  .selected-text {
+    font-size: 12.5px;
   }
   .option-tag {
     width: 58px;

@@ -121,7 +121,7 @@
               <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false" id="project-type-trigger">
                 <span class="selected-value-wrap">
                   <span class="option-color-dot dot-neutral"></span>
-                  <span class="selected-text">Select Project Type (Optional)</span>
+                  <span class="selected-text {{ old('project_type') ? '' : 'is-placeholder' }}">{{ old('project_type') ?: 'Select Project Type' }}</span>
                 </span>
                 <span class="dropdown-chevron-icon">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
