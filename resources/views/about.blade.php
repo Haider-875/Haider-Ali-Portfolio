@@ -46,22 +46,28 @@
       <h3>DEVELOPMENT</h3>
       <p>Laravel</p>
       <p>PHP 8.x</p>
-      <p>MySQL</p>
+      <p>Python</p>
+      <p>TypeScript</p>
+      <p>MySQL / PostgreSQL</p>
       <p>Blade Templating</p>
+      <p>RESTful APIs</p>
     </div>
     <div class="skill-group reveal">
       <h3>FRONTEND</h3>
-      <p>HTML / CSS</p>
-      <p>JavaScript</p>
+      <p>HTML5 / CSS3</p>
+      <p>JavaScript (ES6+)</p>
       <p>Bootstrap 5</p>
       <p>Responsive Design</p>
+      <p>Alpine.js / DOM</p>
     </div>
     <div class="skill-group reveal">
       <h3>DESIGN &amp; TOOLS</h3>
       <p>UI / UX Design</p>
       <p>Figma</p>
+      <p>Design Systems</p>
+      <p>Wireframing &amp; Prototyping</p>
       <p>Git / GitHub</p>
-      <p>Web Experiences</p>
+      <p>Postman / DevTools</p>
     </div>
   </div>
 </section>

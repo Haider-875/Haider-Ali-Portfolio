@@ -26,10 +26,11 @@ class PortfolioRoutesTest extends TestCase
         $response->assertSee('Care Source Indy');
         $response->assertSee('Perfumes Collection');
         $response->assertSee('Mukoh Tires');
+        $response->assertSee('Hari Om Bites');
     }
 
     /**
-     * Test projects index page displays all 6 websites.
+     * Test projects index page displays all 7 websites.
      */
     public function test_work_page_displays_all_six_projects(): void
     {
@@ -42,6 +43,7 @@ class PortfolioRoutesTest extends TestCase
         $response->assertSee('Care Source Indy');
         $response->assertSee('Perfumes Collection');
         $response->assertSee('Mukoh Tires');
+        $response->assertSee('Hari Om Bites');
 
         // Verify live links are present
         $response->assertSee('https://azorasolution.com/', false);
@@ -50,10 +52,11 @@ class PortfolioRoutesTest extends TestCase
         $response->assertSee('https://caresourceindy.com/', false);
         $response->assertSee('https://perfume-collection.wasmer.app/', false);
         $response->assertSee('https://mukoh-demowebsite.netlify.app/', false);
+        $response->assertSee('https://hari-om-bites.wasmer.app/', false);
     }
 
     /**
-     * Test all 6 project detail pages load with 200.
+     * Test all 7 project detail pages load with 200.
      */
     public function test_all_project_detail_pages_load_successfully(): void
     {
@@ -64,6 +67,7 @@ class PortfolioRoutesTest extends TestCase
             'care-source-indy',
             'perfumes-collection',
             'mukoh-tires',
+            'hari-om-bites',
         ];
 
         foreach ($slugs as $slug) {

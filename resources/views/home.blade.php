@@ -66,7 +66,7 @@
   <div class="project-list">
     <!-- 01 Azora Solutions -->
     <a class="project" href="https://azorasolution.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Azora Solutions website">
-      <span class="project-num">01 / 06</span>
+      <span class="project-num">01 / 07</span>
       <div class="project-main">
         <h3>AZORA <span>SOLUTIONS</span></h3>
         <p>BUSINESS / DIGITAL SOLUTIONS</p>
@@ -80,7 +80,7 @@
 
     <!-- 02 AZ Halal Marts -->
     <a class="project" href="https://www.azmarts.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit AZ Halal Marts website">
-      <span class="project-num">02 / 06</span>
+      <span class="project-num">02 / 07</span>
       <div class="project-main">
         <h3>AZ <span>HALAL MARTS</span></h3>
         <p>GROCERY / RETAIL</p>
@@ -94,7 +94,7 @@
 
     <!-- 03 North Fork Auto -->
     <a class="project" href="https://northforkauto.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit North Fork Auto website">
-      <span class="project-num">03 / 06</span>
+      <span class="project-num">03 / 07</span>
       <div class="project-main">
         <h3>NORTH <span>FORK AUTO</span></h3>
         <p>AUTOMOTIVE / WEB</p>
@@ -108,7 +108,7 @@
 
     <!-- 04 Care Source Indy -->
     <a class="project" href="https://caresourceindy.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Care Source Indy website">
-      <span class="project-num">04 / 06</span>
+      <span class="project-num">04 / 07</span>
       <div class="project-main">
         <h3>CARE <span>SOURCE INDY</span></h3>
         <p>HEALTHCARE / SERVICES</p>
@@ -122,7 +122,7 @@
 
     <!-- 05 Perfumes Collection -->
     <a class="project" href="https://perfume-collection.wasmer.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Perfumes Collection website">
-      <span class="project-num">05 / 06</span>
+      <span class="project-num">05 / 07</span>
       <div class="project-main">
         <h3>PERFUME <span>COLLECTION</span></h3>
         <p>FRAGRANCE / E-COMMERCE</p>
@@ -136,7 +136,7 @@
 
     <!-- 06 Mukoh Tires -->
     <a class="project" href="https://mukoh-demowebsite.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mukoh Tires website">
-      <span class="project-num">06 / 06</span>
+      <span class="project-num">06 / 07</span>
       <div class="project-main">
         <h3>MUKOH <span>TIRES</span></h3>
         <p>AUTOMOTIVE / SERVICES</p>
@@ -145,6 +145,20 @@
         <small>MUKOH TIRES</small>
         <b>Go the<br>distance.</b>
         <span>EXPLORE</span>
+      </div>
+    </a>
+
+    <!-- 07 Hari Om Bites -->
+    <a class="project" href="https://hari-om-bites.wasmer.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hari Om Bites website">
+      <span class="project-num">07 / 07</span>
+      <div class="project-main">
+        <h3>HARI OM <span>BITES</span></h3>
+        <p>RESTAURANT / HOSPITALITY</p>
+      </div>
+      <div class="project-preview preview-hariom" aria-hidden="true">
+        <small>HARI OM BITES</small>
+        <b>Authentic cuisine,<br>crafted with passion.</b>
+        <span>EXPLORE FLAVORS</span>
       </div>
     </a>
   </div>
@@ -192,23 +206,29 @@
     <div class="skill-group reveal">
       <h3>DEVELOPMENT</h3>
       <p>Laravel</p>
-      <p>PHP</p>
-      <p>MySQL</p>
-      <p>Blade Templates</p>
+      <p>PHP 8.x</p>
+      <p>Python</p>
+      <p>TypeScript</p>
+      <p>MySQL / PostgreSQL</p>
+      <p>Blade Templating</p>
+      <p>RESTful APIs</p>
     </div>
     <div class="skill-group reveal">
       <h3>FRONTEND</h3>
-      <p>HTML / CSS</p>
-      <p>JavaScript</p>
-      <p>Bootstrap</p>
+      <p>HTML5 / CSS3</p>
+      <p>JavaScript (ES6+)</p>
+      <p>Bootstrap 5</p>
       <p>Responsive Design</p>
+      <p>Alpine.js / DOM</p>
     </div>
     <div class="skill-group reveal">
       <h3>DESIGN &amp; TOOLS</h3>
       <p>UI / UX Design</p>
       <p>Figma</p>
+      <p>Design Systems</p>
+      <p>Wireframing &amp; Prototyping</p>
       <p>Git / GitHub</p>
-      <p>Web Experiences</p>
+      <p>Postman / DevTools</p>
     </div>
   </div>
 </section>

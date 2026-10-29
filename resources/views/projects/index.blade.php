@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Selected Work & Case Studies — Haider Ali')
-@section('meta_description', 'A curated archive of six real-world web applications and platforms engineered by Haider Ali.')
+@section('meta_description', 'A curated archive of real-world web applications and platforms engineered by Haider Ali.')
 
 @section('content')
 <section class="work-section section-wrap" style="padding-top: 140px;">
@@ -16,7 +16,7 @@
   <div class="project-list">
     @foreach($projects as $idx => $project)
     <div class="project">
-      <span class="project-num">0{{ $idx + 1 }} / 06</span>
+      <span class="project-num">{{ sprintf('%02d', $idx + 1) }} / {{ sprintf('%02d', count($projects)) }}</span>
       <div class="project-main">
         <h3>
           <a href="{{ route('projects.show', $project['slug']) }}">

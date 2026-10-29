@@ -676,6 +676,7 @@ a:focus-visible, button:focus-visible {
 .preview-care { background: #e1eff0; color: #164a53; }
 .preview-perfume { background: #302622; color: #eee0cc; }
 .preview-mukoh { background: #ddcd17; color: #121212; }
+.preview-hari, .preview-hariom { background: #b43403; color: #fff7ed; }
 
 .project-footnote {
   color: #777;
