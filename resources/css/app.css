@@ -449,28 +449,28 @@ a:focus-visible, button:focus-visible {
    INTRO SECTION
    ========================================================================== */
 .intro-section {
-  padding-top: 180px;
-  padding-bottom: 170px;
+  padding-top: 120px;
+  padding-bottom: 110px;
 }
 
 .section-eyebrow {
   font: 600 11px var(--font);
   letter-spacing: 0.17em;
   color: #9c9c9c;
-  margin: 0 0 65px;
+  margin: 0 0 40px;
   text-transform: uppercase;
 }
 
 .intro-aside {
-  font: 400 16px/1.5 var(--font);
+  font: 400 15px/1.5 var(--font);
   color: #aaa;
 }
 
 .intro-heading {
-  font: 600 clamp(35px, 4.65vw, 90px)/1.09 var(--font);
-  letter-spacing: -0.065em;
-  max-width: 1100px;
-  margin: 0 0 55px;
+  font: 600 clamp(24px, 2.4vw, 38px)/1.25 var(--font);
+  letter-spacing: -0.045em;
+  max-width: 1000px;
+  margin: 0 0 32px;
   color: #f0f0ee;
 }
 
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible {
    WORK SECTION
    ========================================================================== */
 .work-section {
-  padding-bottom: 180px;
+  padding-bottom: 120px;
 }
 
 .section-heading-row {
@@ -526,16 +526,16 @@ a:focus-visible, button:focus-visible {
   justify-content: space-between;
   gap: 40px;
   align-items: end;
-  margin-bottom: 83px;
+  margin-bottom: 45px;
 }
 
 .section-heading-row .section-eyebrow {
-  margin-bottom: 33px;
+  margin-bottom: 20px;
 }
 
 .display-heading {
-  font: 700 clamp(58px, 8.5vw, 150px)/0.95 var(--font);
-  letter-spacing: -0.095em;
+  font: 700 clamp(38px, 4vw, 62px)/1.02 var(--font);
+  letter-spacing: -0.065em;
   margin: 0;
   color: #fff;
 }
@@ -608,9 +608,9 @@ a:focus-visible, button:focus-visible {
 }
 
 .project-main h3 {
-  font: 600 clamp(26px, 4vw, 68px)/1.1 var(--font);
-  letter-spacing: -0.075em;
-  margin: 0 0 13px;
+  font: 600 clamp(20px, 1.9vw, 30px)/1.2 var(--font);
+  letter-spacing: -0.045em;
+  margin: 0 0 8px;
   color: #fff;
 }
 
@@ -700,10 +700,10 @@ a:focus-visible, button:focus-visible {
 }
 
 .about-description {
-  font: 400 clamp(22px, 2.35vw, 38px)/1.35 var(--font);
-  letter-spacing: -0.035em;
-  margin: 50px 0 22px;
-  max-width: 730px;
+  font: 400 clamp(16px, 1.2vw, 19px)/1.65 var(--font);
+  letter-spacing: -0.015em;
+  margin: 28px 0 16px;
+  max-width: 680px;
   color: #f0f0ee;
 }
 
@@ -715,8 +715,8 @@ a:focus-visible, button:focus-visible {
 .about-small {
   max-width: 500px;
   color: #929292;
-  font: 400 16px/1.7 var(--font);
-  margin-bottom: 55px;
+  font: 400 14px/1.65 var(--font);
+  margin-bottom: 35px;
 }
 
 .about-portrait {
@@ -776,9 +776,9 @@ a:focus-visible, button:focus-visible {
 }
 
 .skill-group h3 {
-  font: 600 25px var(--font);
-  letter-spacing: -0.055em;
-  margin: 12px 0 30px;
+  font: 600 20px var(--font);
+  letter-spacing: -0.035em;
+  margin: 10px 0 20px;
   color: #fff;
 }
 
@@ -786,11 +786,11 @@ a:focus-visible, button:focus-visible {
 .skill-group p {
   border-bottom: 1px solid #2a2a2a;
   margin: 0;
-  padding: 17px 0;
+  padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: 400 16px var(--font);
+  font: 400 14px var(--font);
   color: #aaaaaa;
   transition: color 0.25s, padding-left 0.25s;
 }
@@ -804,7 +804,7 @@ a:focus-visible, button:focus-visible {
    CONTACT SECTION & FORM — NO ARROWS
    ========================================================================== */
 .contact-section {
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .contact-meta {
@@ -816,9 +816,9 @@ a:focus-visible, button:focus-visible {
 }
 
 .contact-heading {
-  font: 700 clamp(57px, 11.8vw, 220px)/0.95 var(--font);
-  letter-spacing: -0.105em;
-  margin: 110px 0 80px;
+  font: 700 clamp(42px, 4.8vw, 74px)/1.02 var(--font);
+  letter-spacing: -0.065em;
+  margin: 45px 0 40px;
   color: #fff;
 }
 
@@ -847,10 +847,10 @@ a:focus-visible, button:focus-visible {
 
 /* Email link - No Arrow */
 .email-link {
-  font: 500 clamp(18px, 2.6vw, 42px) var(--font);
-  letter-spacing: -0.04em;
+  font: 500 clamp(16px, 1.6vw, 24px) var(--font);
+  letter-spacing: -0.03em;
   border-bottom: 1px solid #aaaaaa;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   color: #fff;
 }
 
@@ -1137,20 +1137,20 @@ a:focus-visible, button:focus-visible {
     margin-top: 25px;
   }
   .display-heading {
-    font-size: clamp(48px, 11vw, 84px);
+    font-size: clamp(32px, 8.5vw, 46px);
   }
   .work-section, .about-section, .expertise-section {
-    padding-bottom: 110px;
+    padding-bottom: 75px;
   }
   .project {
     grid-template-columns: 55px 1fr;
     gap: 9px;
-    padding: 28px 0;
-    min-height: 117px;
+    padding: 22px 0;
+    min-height: 90px;
   }
   .project-main h3 {
-    font-size: clamp(23px, 5.4vw, 37px);
-    margin-bottom: 11px;
+    font-size: clamp(20px, 5vw, 26px);
+    margin-bottom: 8px;
   }
   .project-main p {
     font-size: 8px;
@@ -1176,7 +1176,7 @@ a:focus-visible, button:focus-visible {
     gap: 50px;
   }
   .contact-heading {
-    margin: 65px 0 65px;
+    margin: 40px 0 35px;
   }
   .contact-meta {
     font-size: 9px;
