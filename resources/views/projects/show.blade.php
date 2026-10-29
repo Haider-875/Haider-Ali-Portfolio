@@ -30,8 +30,8 @@
   </div>
 
   <!-- Hero Image -->
-  <div class="border border-dark mb-5" style="background: #111;">
-    <img src="{{ asset($project['image_hero']) }}" alt="{{ $project['title'] }}" class="w-100 h-auto d-block">
+  <div class="border border-dark mb-5 overflow-hidden" style="background: #111;">
+    <img src="{{ asset($project['image_hero']) }}" alt="{{ $project['title'] }}" class="w-100 d-block" style="max-height: 560px; object-fit: cover; object-position: center;" loading="eager">
   </div>
 
   <div class="row g-5">
@@ -91,8 +91,8 @@
         <div class="row g-4">
           @foreach($project['gallery'] as $img)
           <div class="col-md-6">
-            <div class="border border-secondary border-opacity-25">
-              <img src="{{ asset($img) }}" alt="{{ $project['title'] }}" class="w-100 h-auto d-block" loading="lazy">
+            <div class="border border-secondary border-opacity-25 overflow-hidden" style="background: #09090b;">
+              <img src="{{ asset($img) }}" alt="{{ $project['title'] }}" class="w-100 d-block" style="aspect-ratio: 16 / 10; object-fit: cover; object-position: center;" loading="lazy">
             </div>
           </div>
           @endforeach

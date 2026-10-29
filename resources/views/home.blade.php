@@ -65,102 +65,165 @@
 
   <div class="project-list">
     <!-- 01 Azora Solutions -->
-    <a class="project" href="https://azorasolution.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Azora Solutions website">
+    <div class="project reveal" data-project="azora-solutions">
       <span class="project-num">01 / 07</span>
       <div class="project-main">
-        <h3>AZORA <span>SOLUTIONS</span></h3>
+        <h3><a href="{{ route('projects.show', 'azora-solutions') }}" class="project-title-link">AZORA <span>SOLUTIONS</span></a></h3>
         <p>BUSINESS / DIGITAL SOLUTIONS</p>
+        <div class="project-actions">
+          <a href="https://azorasolution.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit Azora Solutions live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'azora-solutions') }}" class="btn-project-case" aria-label="View Azora Solutions architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-azora" aria-hidden="true">
         <small>AZORA</small>
         <b>Business,<br>made better.</b>
         <span>EXPLORE SOLUTIONS</span>
       </div>
-    </a>
+    </div>
 
     <!-- 02 AZ Halal Marts -->
-    <a class="project" href="https://www.azmarts.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit AZ Halal Marts website">
+    <div class="project reveal" data-project="az-halal-marts">
       <span class="project-num">02 / 07</span>
       <div class="project-main">
-        <h3>AZ <span>HALAL MARTS</span></h3>
+        <h3><a href="{{ route('projects.show', 'az-halal-marts') }}" class="project-title-link">AZ <span>HALAL MARTS</span></a></h3>
         <p>GROCERY / RETAIL</p>
+        <div class="project-actions">
+          <a href="https://www.azmarts.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit AZ Halal Marts live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'az-halal-marts') }}" class="btn-project-case" aria-label="View AZ Halal Marts architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-mart" aria-hidden="true">
         <small>AZ MARTS</small>
         <b>Freshness,<br>delivered.</b>
         <span>SHOP THE COLLECTION</span>
       </div>
-    </a>
+    </div>
 
     <!-- 03 North Fork Auto -->
-    <a class="project" href="https://northforkauto.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit North Fork Auto website">
+    <div class="project reveal" data-project="north-fork-auto">
       <span class="project-num">03 / 07</span>
       <div class="project-main">
-        <h3>NORTH <span>FORK AUTO</span></h3>
+        <h3><a href="{{ route('projects.show', 'north-fork-auto') }}" class="project-title-link">NORTH <span>FORK AUTO</span></a></h3>
         <p>AUTOMOTIVE / WEB</p>
+        <div class="project-actions">
+          <a href="https://northforkauto.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit North Fork Auto live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'north-fork-auto') }}" class="btn-project-case" aria-label="View North Fork Auto architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-north" aria-hidden="true">
         <small>NORTH FORK AUTO</small>
         <b>Driven<br>forward.</b>
         <span>EXPLORE WEBSITE</span>
       </div>
-    </a>
+    </div>
 
     <!-- 04 Care Source Indy -->
-    <a class="project" href="https://caresourceindy.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Care Source Indy website">
+    <div class="project reveal" data-project="care-source-indy">
       <span class="project-num">04 / 07</span>
       <div class="project-main">
-        <h3>CARE <span>SOURCE INDY</span></h3>
+        <h3><a href="{{ route('projects.show', 'care-source-indy') }}" class="project-title-link">CARE <span>SOURCE INDY</span></a></h3>
         <p>HEALTHCARE / SERVICES</p>
+        <div class="project-actions">
+          <a href="https://caresourceindy.com/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit Care Source Indy live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'care-source-indy') }}" class="btn-project-case" aria-label="View Care Source Indy architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-care" aria-hidden="true">
         <small>CARE SOURCE</small>
         <b>Care that<br>connects.</b>
         <span>LEARN MORE</span>
       </div>
-    </a>
+    </div>
 
     <!-- 05 Perfumes Collection -->
-    <a class="project" href="https://perfume-collection.wasmer.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Perfumes Collection website">
+    <div class="project reveal" data-project="perfumes-collection">
       <span class="project-num">05 / 07</span>
       <div class="project-main">
-        <h3>PERFUME <span>COLLECTION</span></h3>
+        <h3><a href="{{ route('projects.show', 'perfumes-collection') }}" class="project-title-link">PERFUME <span>COLLECTION</span></a></h3>
         <p>FRAGRANCE / E-COMMERCE</p>
+        <div class="project-actions">
+          <a href="https://perfume-collection.wasmer.app/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit Perfumes Collection live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'perfumes-collection') }}" class="btn-project-case" aria-label="View Perfumes Collection architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-perfume" aria-hidden="true">
         <small>SCENT STORIES</small>
         <b>The art of<br>fragrance.</b>
         <span>DISCOVER</span>
       </div>
-    </a>
+    </div>
 
     <!-- 06 Mukoh Tires -->
-    <a class="project" href="https://mukoh-demowebsite.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mukoh Tires website">
+    <div class="project reveal" data-project="mukoh-tires">
       <span class="project-num">06 / 07</span>
       <div class="project-main">
-        <h3>MUKOH <span>TIRES</span></h3>
+        <h3><a href="{{ route('projects.show', 'mukoh-tires') }}" class="project-title-link">MUKOH <span>TIRES</span></a></h3>
         <p>AUTOMOTIVE / SERVICES</p>
+        <div class="project-actions">
+          <a href="https://mukoh-demowebsite.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit Mukoh Tires live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'mukoh-tires') }}" class="btn-project-case" aria-label="View Mukoh Tires architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-mukoh" aria-hidden="true">
         <small>MUKOH TIRES</small>
         <b>Go the<br>distance.</b>
         <span>EXPLORE</span>
       </div>
-    </a>
+    </div>
 
     <!-- 07 Hari Om Bites -->
-    <a class="project" href="https://hari-om-bites.wasmer.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hari Om Bites website">
+    <div class="project reveal" data-project="hari-om-bites">
       <span class="project-num">07 / 07</span>
       <div class="project-main">
-        <h3>HARI OM <span>BITES</span></h3>
+        <h3><a href="{{ route('projects.show', 'hari-om-bites') }}" class="project-title-link">HARI OM <span>BITES</span></a></h3>
         <p>RESTAURANT / HOSPITALITY</p>
+        <div class="project-actions">
+          <a href="https://hari-om-bites.wasmer.app/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Visit Hari Om Bites live website">
+            <span class="action-pulse" aria-hidden="true"></span>
+            <span>VISIT LIVE SITE</span>
+          </a>
+          <a href="{{ route('projects.show', 'hari-om-bites') }}" class="btn-project-case" aria-label="View Hari Om Bites architecture">
+            <span>VIEW ARCHITECTURE</span>
+          </a>
+        </div>
       </div>
       <div class="project-preview preview-hariom" aria-hidden="true">
         <small>HARI OM BITES</small>
         <b>Authentic cuisine,<br>crafted with passion.</b>
         <span>EXPLORE FLAVORS</span>
       </div>
-    </a>
+    </div>
   </div>
 
   <p class="project-footnote">PROJECT PREVIEWS ARE ORIGINAL GRAPHIC PLACEHOLDERS, NOT LIVE WEBSITE SCREENSHOTS. ALL PROJECT LINKS OPEN THE LIVE SITES.</p>

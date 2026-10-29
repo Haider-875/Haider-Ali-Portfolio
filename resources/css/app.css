@@ -686,6 +686,86 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ==========================================================================
+   PROJECT ACTIONS — VISIT LIVE SITE & VIEW ARCHITECTURE (NO ARROWS)
+   ========================================================================== */
+.project-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-title-link:hover {
+  color: var(--accent);
+}
+
+.project-actions {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+  position: relative;
+  z-index: 5;
+}
+
+.btn-project-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #080808;
+  font-family: var(--font);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 10px rgba(245, 217, 0, 0.2);
+}
+
+.btn-project-live:hover {
+  background: #ffffff;
+  color: #080808;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-project-live .action-pulse {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #080808;
+}
+
+.btn-project-case {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #ededed;
+  font-family: var(--font);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-project-case:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(245, 217, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
 .about-section {
@@ -1143,7 +1223,7 @@ a:focus-visible, button:focus-visible {
 
 .selected-text {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 400;
   color: #ededed;
   line-height: 1.4;
@@ -1151,7 +1231,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .selected-text.is-placeholder {
-  color: #71717a;
+  color: #52525b;
+  font-size: 12.5px;
   font-weight: 400;
 }
 
@@ -1535,6 +1616,7 @@ textarea.form-control-dark {
   }
 }
 
+
 @media (max-width: 767px) {
   .header-inner {
     height: 75px;
@@ -1695,6 +1777,22 @@ textarea.form-control-dark {
   .project-preview {
     display: none;
   }
+  .project-actions {
+    margin-top: 11px;
+    gap: 8px;
+  }
+  .btn-project-live,
+  .btn-project-case {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 7px 14px;
+    letter-spacing: 0.12em;
+    border-radius: 2px;
+  }
+  .btn-project-live .action-pulse {
+    width: 4px;
+    height: 4px;
+  }
   .about-description {
     font-size: 16px !important;
     line-height: 1.65;
@@ -1762,12 +1860,12 @@ textarea.form-control-dark {
     padding: 0.6rem 0.85rem;
   }
   .custom-select-trigger {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     padding: 0.6rem 0.85rem;
   }
   .selected-text {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
   }
   .custom-option {
@@ -1832,12 +1930,41 @@ textarea.form-control-dark {
   }
   .custom-select-trigger,
   .selected-text {
-    font-size: 12.5px;
+    font-size: 11.5px;
   }
   .option-tag {
     width: 58px;
     font-size: 7.5px;
     letter-spacing: 0.05em;
+  }
+  .project {
+    grid-template-columns: 42px 1fr;
+    gap: 10px;
+  }
+  .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .btn-project-live,
+  .btn-project-case {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 7px 12px;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .btn-project-live .action-pulse {
+    width: 4px;
+    height: 4px;
   }
   .hero-name {
     font-size: 21.2vw;
