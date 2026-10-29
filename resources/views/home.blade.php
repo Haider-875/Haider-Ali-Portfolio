@@ -45,7 +45,7 @@
     </div>
     <div class="col-lg-8">
       <h2 id="intro-title" class="intro-heading reveal">
-        I BUILD <span>WEB</span> EXPERIENCES THAT <span class="highlight-bar">FEEL AS GOOD</span> AS THEY WORK<span class="white-dot">.</span>
+        I BUILD <span>WEB</span> EXPERIENCES THAT <br><span class="highlight-bar">FEEL AS GOOD</span> AS THEY WORK<span class="white-dot">.</span>
       </h2>
       <a href="#about" class="underlined-link reveal">MORE ABOUT ME</a>
     </div>
@@ -207,9 +207,9 @@
       <h3>DEVELOPMENT</h3>
       <p>Laravel</p>
       <p>PHP 8.x</p>
-      <p>Python</p>
+      <p>Nodejs</p>
       <p>TypeScript</p>
-      <p>MySQL / PostgreSQL</p>
+      <p>MySQL</p>
       <p>Blade Templating</p>
       <p>RESTful APIs</p>
     </div>
@@ -219,14 +219,14 @@
       <p>JavaScript (ES6+)</p>
       <p>Bootstrap 5</p>
       <p>Responsive Design</p>
-      <p>Alpine.js / DOM</p>
+      <!-- <p>Alpine.js / DOM</p> -->
     </div>
     <div class="skill-group reveal">
       <h3>DESIGN &amp; TOOLS</h3>
       <p>UI / UX Design</p>
       <p>Figma</p>
       <p>Design Systems</p>
-      <p>Wireframing &amp; Prototyping</p>
+      <!-- <p>Wireframing &amp; Prototyping</p> -->
       <p>Git / GitHub</p>
       <p>Postman / DevTools</p>
     </div>
