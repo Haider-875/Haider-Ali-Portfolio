@@ -1724,10 +1724,10 @@ textarea.form-control-dark {
 
 @media (max-width: 767px) {
   .header-inner {
-    height: 75px;
+    height: 68px;
   }
   .brand {
-    font-size: 30px;
+    font-size: 27px;
   }
   .desktop-nav, .header-cta {
     display: none;
@@ -1735,6 +1735,20 @@ textarea.form-control-dark {
   .menu-toggle {
     display: block;
     margin-left: auto;
+    width: 40px;
+    height: 36px;
+  }
+  .menu-toggle span {
+    left: 7px;
+    width: 26px;
+    top: 14px;
+  }
+  .menu-toggle span + span {
+    top: 22px;
+  }
+  .menu-toggle.open span:first-child,
+  .menu-toggle.open span + span {
+    top: 18px;
   }
   .mobile-nav {
     display: flex;
@@ -1743,7 +1757,7 @@ textarea.form-control-dark {
     z-index: 45;
     inset: 0;
     top: 0;
-    padding: 125px 7vw 30px;
+    padding: 110px 7vw 30px;
     background: #090909;
     opacity: 0;
     visibility: hidden;
@@ -1756,22 +1770,23 @@ textarea.form-control-dark {
     transform: none;
   }
   .mobile-nav a {
-    font: 600 clamp(40px, 10vw, 72px)/1.35 var(--font);
-    letter-spacing: -0.07em;
+    font: 600 clamp(32px, 8vw, 52px)/1.3 var(--font);
+    letter-spacing: -0.06em;
     border-bottom: 1px solid #2e2e2e;
     display: flex;
     justify-content: space-between;
     color: #fff;
+    padding: 8px 0;
   }
   .mobile-nav a span {
-    font-size: 12px;
+    font-size: 11px;
     color: #888;
     letter-spacing: 0;
   }
   .mobile-nav p {
     color: #777;
     margin-top: auto;
-    font: 500 10px var(--font);
+    font: 500 9.5px var(--font);
     letter-spacing: 0.12em;
   }
   .hero {
@@ -2022,6 +2037,32 @@ textarea.form-control-dark {
 }
 
 @media (max-width: 390px) {
+  .header-inner {
+    height: 64px;
+  }
+  .brand {
+    font-size: 25px;
+  }
+  .menu-toggle {
+    width: 36px;
+    height: 32px;
+  }
+  .menu-toggle span {
+    left: 6px;
+    width: 23px;
+    top: 12px;
+  }
+  .menu-toggle span + span {
+    top: 19px;
+  }
+  .menu-toggle.open span:first-child,
+  .menu-toggle.open span + span {
+    top: 15px;
+  }
+  .mobile-nav a {
+    font-size: clamp(26px, 7.5vw, 36px);
+    padding: 6px 0;
+  }
   .contact-form-container {
     padding: 1.15rem 0.9rem;
   }
