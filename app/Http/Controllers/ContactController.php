@@ -53,7 +53,9 @@ class ContactController extends Controller
                 'subject' => $validated['subject'] ?? null,
                 'project_type' => $validated['project_type'] ?? null,
                 'message' => $validated['message'],
+                'ip_address' => $request->ip(),
             ]);
+            $message->created_at = now();
         }
 
         // 2. Dispatch email notification to Hadihnd0@gmail.com

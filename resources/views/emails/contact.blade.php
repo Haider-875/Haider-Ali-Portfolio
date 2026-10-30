@@ -109,7 +109,7 @@
         </div>
 
         <div class="footer">
-            Submitted from IP: {{ $contact->ip_address ?? 'N/A' }} at {{ $contact->created_at->format('Y-m-d H:i:s') }}
+            Submitted from IP: {{ $contact->ip_address ?? 'N/A' }} at {{ optional($contact->created_at)->format('Y-m-d H:i:s') ?? now()->format('Y-m-d H:i:s') }}
         </div>
     </div>
 </body>
