@@ -766,6 +766,111 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ==========================================================================
+   CASE STUDY & ARCHITECTURE DETAIL TYPOGRAPHY
+   ========================================================================== */
+.case-study-title {
+  font: 700 clamp(26px, 3.2vw, 42px)/1.1 var(--font);
+  letter-spacing: -0.045em;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.case-study-tagline {
+  font-family: var(--font-body);
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: #a1a1aa;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.case-study-summary {
+  font-family: var(--font-body);
+  font-size: clamp(13.5px, 1.15vw, 15px);
+  line-height: 1.65;
+  color: #d4d4d8;
+  max-width: 780px;
+  margin-bottom: 24px;
+}
+
+.case-study-heading {
+  font: 700 clamp(17px, 1.4vw, 21px)/1.2 var(--font);
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.case-study-lead {
+  font-family: var(--font-body);
+  font-size: clamp(13.5px, 1.1vw, 14.5px);
+  line-height: 1.7;
+  color: #a1a1aa;
+  margin: 0;
+}
+
+.case-card-title {
+  font: 600 15px/1.25 var(--font);
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.case-card-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  color: #a1a1aa;
+  margin: 0;
+}
+
+.metric-card-val {
+  font: 700 clamp(22px, 2.2vw, 26px)/1 var(--font);
+  color: #ffffff;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.metric-card-lbl {
+  font: 600 10px/1.3 var(--font);
+  letter-spacing: 0.12em;
+  color: #8e8e8e;
+  text-transform: uppercase;
+}
+
+.spec-sidebar-title {
+  font: 600 15px/1.25 var(--font);
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.spec-label {
+  font: 600 10px/1.2 var(--font);
+  letter-spacing: 0.12em;
+  color: #71717a;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.spec-value {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.spec-tech-badge {
+  font-family: var(--font);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #e4e4e7;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 9px;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
 .about-section {
