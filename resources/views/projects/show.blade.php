@@ -73,8 +73,8 @@
         <h3 class="h4 text-white mb-3" style="font-family: var(--font);">Measurable Performance Outcomes</h3>
         <div class="row g-3">
           @foreach($project['key_metrics'] as $metric)
-          <div class="col-4">
-            <div class="p-4 border border-secondary border-opacity-25 text-center" style="background: #111;">
+          <div class="col-12 col-sm-4">
+            <div class="p-3 p-sm-4 border border-secondary border-opacity-25 text-center h-100" style="background: #111;">
               <div class="fs-2 fw-bold text-white mb-1" style="font-family: var(--font);">{{ $metric['value'] }}</div>
               <div class="small text-secondary text-uppercase" style="font-family: var(--font);">{{ $metric['label'] }}</div>
             </div>
